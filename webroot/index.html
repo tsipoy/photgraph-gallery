@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio detail</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
+  <input type="checkbox" id="homepage" class="portofolio_header_homepage">
   <header class="portofolio__header">
     <h1 class="portofolio__header_heading">Photograph</h1>
+    <label for="homepage" class="portofolio__header__label">
+      <span class="portofolio__header__label__a11y">Open menu</span>
+    </label>
     <nav class="portofolio__header_heading__menu_navigation">
       <ul class="portofolio__header_heading__menu_navigation__lists">
         <li class="portofolio__header_heading__menu_navigation__lists_heading">About</li>
@@ -18,6 +23,8 @@
         <li class="portofolio__header_heading__menu_navigation__lists_heading">Contact</li>
       </ul>
     </nav>
+    <p class="portofolio__header__back">Back to portfolio</p>
+    <img class="portofolio__header__menu_svg" src="../webroot/images/menu.svg" alt="">
   </header>
   <main class="portofolio__main">
     <section class="portofolio__main__photograph">
