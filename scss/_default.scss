@@ -1,0 +1,18 @@
+@import "variables";
+
+body {
+  margin: $default_margin;
+}
+
+html {
+  font-family: 'Dm Sans', sans-serif;
+}
+
+h1, 
+h2 {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+li {
+  list-style: $current-decoration;
+}
