@@ -4,8 +4,8 @@
   background-color: $bg-header;
   color: $header-color;
   position: relative;
-  padding-inline-end: 14px;
-  padding-inline-start: 14px;
+  padding-inline-end: $padding-inline-start;
+  padding-inline-start: $padding-inline-start;
 }
 
 .portofolio__header_heading {
