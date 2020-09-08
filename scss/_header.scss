@@ -9,12 +9,23 @@
 }
 
 .portofolio__header_heading {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
   padding-block-start: 16px;
   padding-block-end: 16px;
+  text-transform: uppercase;
 }
 
 .portofolio_header_homepage {
   display: none;
+}
+
+.portofolio__header__label {
+  position: absolute;
+  top: 21%;
+  right: 0;
+  z-index: 1; 
 }
 
 .portofolio__header_heading__menu_navigation__lists_heading {
@@ -23,8 +34,8 @@
 
 .portofolio__header__menu_svg {
   position: absolute;
-  right: 5%;
-  top: 20%;
+  right: 11%;
+    top: 40%;
 }
 
 .portofolio__header__label__a11y {
@@ -38,8 +49,8 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 165px;
   box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
   transform: translateY(-127%);
   transition: transform 0.3s;
