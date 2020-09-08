@@ -1,0 +1,33 @@
+.portofolio__main__photograph__header {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-block-end: 65px;
+  padding-block-start: 61px;
+}
+
+.portofolio__main__photograph__header_heading {
+    font-size: 52px;
+    line-height: 64px;
+    color: #000000;
+}
+
+.portofolio__main__back {
+  @include  reset-size-gray-normal-text;
+  padding-block-end: 61px;
+  margin-block-start: -14px;
+  text-decoration-line: $current-decoration;
+}
+
+.portofolio__main__back::before {
+  content: " ← ";
+}
+
+.portofolio__main__back:hover {
+  text-decoration: underline;
+}
+
+.portofolio__main__photograph__slider_description {
+  @include reset-size-black-normal-text;
+  // padding-block-start: 61px;
+  // padding-block-end: 82px;
+}
