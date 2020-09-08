@@ -17,3 +17,18 @@ $padding-inline-start: 14px;
   color: #000000;
 }
 
+@mixin reset-h2-h3 {
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;  
+}
+
+@mixin reset-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-inline-start: -39px;
+  max-width: 68px;
+}
+
