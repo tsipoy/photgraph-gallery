@@ -2,4 +2,18 @@ $default_margin: 0;
 $bg-header: #434CCC;
 $current-decoration: none;
 $header-color:  #FFFFFF;
+$padding-inline-start: 14px;
 // $current-bg-header: rgba(67, 76, 204, 0.05);
+@mixin reset-size-gray-normal-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+}
+
+@mixin reset-size-black-normal-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
