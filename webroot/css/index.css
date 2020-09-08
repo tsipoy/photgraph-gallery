@@ -57,19 +57,29 @@ li {
   padding-inline-start: 14px; }
 
 .portofolio__header_heading {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
   padding-block-start: 16px;
-  padding-block-end: 16px; }
+  padding-block-end: 16px;
+  text-transform: uppercase; }
 
 .portofolio_header_homepage {
   display: none; }
+
+.portofolio__header__label {
+  position: absolute;
+  top: 21%;
+  right: 0;
+  z-index: 1; }
 
 .portofolio__header_heading__menu_navigation__lists_heading {
   padding-block-end: 16px; }
 
 .portofolio__header__menu_svg {
   position: absolute;
-  right: 5%;
-  top: 20%; }
+  right: 11%;
+  top: 40%; }
 
 .portofolio__header__label__a11y {
   color: transparent; }
@@ -81,8 +91,8 @@ li {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 165px;
   box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
   transform: translateY(-127%);
   transition: transform 0.3s; }
@@ -125,7 +135,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 
 .portofolio__main {
   background-color: rgba(67, 76, 204, 0.05);
-  padding-inline-start: 14px; }
+  padding-inline-start: 14px;
+  margin-block-start: -20px; }
 
 .portofolio__main__photograph__header {
   display: flex;
@@ -204,14 +215,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   mix-blend-mode: normal;
   padding-block-end: 40px;
   padding-block-start: 40px; }
-
-.portofolio__main__research_photo__morroco__social_media {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-inline-start: -39px;
-  max-width: 68px; }
 
 .portofolio__main__updating {
   background-color: #FFDD78;
@@ -354,3 +357,28 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   margin-inline-end: -15px;
   margin-inline-start: -14px;
   padding-inline-start: 14px; }
+
+.portofolio__main__research_photo__morroco__social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-inline-start: -39px;
+  max-width: 68px;
+  padding-block-end: 105px; }
+
+.portofolio__footer__social_media__list svg,
+.portofolio__main__research_photo__morroco__social_media svg {
+  fill: black; }
+
+.portofolio__footer__social_media__list__facebook svg:hover,
+.portofolio__main__research_photo__morroco__social_media__list_facebook svg:hover {
+  fill: #434CCC; }
+
+.portofolio__footer__social_media__list__twittter svg:hover,
+.portofolio__main__research_photo__morroco__social_media__list_twitter svg:hover {
+  fill: lightblue; }
+
+.portofolio__footer__social_media__list__instagram svg:hover,
+.portofolio__main__research_photo__morroco__social_media__list_instagram svg:hover {
+  fill: #c56565; }
