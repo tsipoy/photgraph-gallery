@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "DM Sans";
   font-weight: 400;
@@ -41,8 +42,9 @@ html {
   font-family: 'Dm Sans', sans-serif; }
 
 h1,
-h2 {
-  font-family: 'DM Serif Display', sans-serif; }
+h2,
+h3 {
+  font-family: 'DM Serif Display', serif; }
 
 li {
   list-style: none; }
@@ -120,3 +122,235 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     display: none; }
   .portofolio__header__menu_svg {
     display: none; } }
+
+.portofolio__main {
+  background-color: rgba(67, 76, 204, 0.05);
+  padding-inline-start: 14px; }
+
+.portofolio__main__photograph__header {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-block-end: 65px;
+  padding-block-start: 61px; }
+
+.portofolio__main__photograph__header_heading {
+  font-size: 52px;
+  line-height: 64px;
+  color: #000000; }
+
+.portofolio__main__back {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  padding-block-end: 61px;
+  margin-block-start: -14px;
+  text-decoration-line: none; }
+
+.portofolio__main__back::before {
+  content: " ← "; }
+
+.portofolio__main__back:hover {
+  text-decoration: underline; }
+
+.portofolio__main__photograph__slider_description {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000; }
+
+.portofolio__main__photograph__about__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-inline-start: -31px;
+  padding-inline-end: 15px;
+  padding-block-start: 92px;
+  padding-block-end: 75px; }
+
+.portofolio__main__photograph__about__navigation__camera_list__date,
+.portofolio__main__photograph__about__navigation__camera_list__location,
+.portofolio__main__photograph__about__navigation__camera_list__camera,
+.portofolio__main__photograph__about__navigation__camera_list__lens {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal; }
+
+.portofolio__main__photograph__about__navigation__camera_list__time,
+.portofolio__main__photograph__about__navigation__camera_list__place,
+.portofolio__main__photograph__about__navigation__camera_list__brand,
+.portofolio__main__photograph__about__navigation__camera_list__size {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  font-weight: bold; }
+
+.portofolio__main__research_photo__morroco {
+  padding-inline-end: 15px; }
+
+.portofolio__main__research_photo__header_heading {
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000; }
+
+.portofolio__main__research_photo__morroco_features {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000; }
+
+.portofolio__main__research_photo__morroco_experiences {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  padding-block-end: 40px;
+  padding-block-start: 40px; }
+
+.portofolio__main__research_photo__morroco__social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-inline-start: -39px;
+  max-width: 68px; }
+
+.portofolio__main__updating {
+  background-color: #FFDD78;
+  margin-inline-start: -14px;
+  padding-inline-start: 15px;
+  padding-block-start: 63px;
+  padding-block-end: 54px;
+  padding-inline-end: 15px; }
+
+.portofolio__main__updating__header_heading {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.portofolio__main__updating__form__heading {
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000; }
+
+.portofolio__main__updating__form__label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 16px; }
+
+.portofolio__main__updating__form__input {
+  background-color: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-inline-start: 16px;
+  padding-block-end: 11px;
+  padding-block-start: 13px;
+  margin-block-start: 25px; }
+
+.portofolio__main__updating__form__submit {
+  background-color: #434CCC;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding-block-end: 11px;
+  padding-block-start: 13px;
+  padding-inline-end: 45px;
+  padding-inline-start: 45px; }
+
+.portofolio__footer {
+  background-color: #FFFFFF;
+  padding-block-start: 75px;
+  padding-inline-start: 14px;
+  padding-inline-end: 15px; }
+
+.portofolio__footer__header_heading {
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.portofolio__footer__header_description {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  padding-block-start: 22px;
+  padding-block-end: 22px; }
+
+.portofolio__footer__social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-inline-start: -39px;
+  max-width: 68px;
+  padding-block-end: 78px; }
+
+.portofolio__footer__homepage__heading {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000; }
+
+.portofolio__footer__map {
+  padding-block-end: 69px;
+  padding-block-start: 77px; }
+
+.portofolio__footer__homepage__navigation {
+  padding-inline-start: 0; }
+
+.portofolio__footer__homepage__navigation_list {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal; }
+
+.portofolio__footer__map__navigation__list__experience {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal;
+  padding-inline-start: 62px; }
+
+.portofolio__footer__map__navigation__list:nth-of-type(1) {
+  background-image: url("../images/bitmap.png");
+  background-repeat: no-repeat; }
+
+.portofolio__footer__map__navigation__list:nth-of-type(2) {
+  background-image: url("../images/bitmap_experiencing.png");
+  background-repeat: no-repeat; }
+
+.portofolio__footer__map__navigation__list__date {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  padding-inline-start: 62px; }
+
+.portofolio__footer__copyright_modifying {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: normal; }
+
+.portofolio__footer__copyright {
+  border-block-start: rgba(0, 0, 0, 0.1) solid 1px;
+  mix-blend-mode: normal;
+  padding-block-end: 28px;
+  padding-block-start: 26px;
+  margin-inline-end: -15px;
+  margin-inline-start: -14px;
+  padding-inline-start: 14px; }
