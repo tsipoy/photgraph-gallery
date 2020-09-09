@@ -328,12 +328,16 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   padding-inline-start: 62px; }
 
 .portofolio__footer__map__navigation__list:nth-of-type(1) {
-  background-image: url("../images/bitmap.png");
-  background-repeat: no-repeat; }
+  background-image: url("../images/woman_sm.jpg");
+  background-repeat: no-repeat;
+  background-size: 70px;
+  border-radius: 5px; }
 
 .portofolio__footer__map__navigation__list:nth-of-type(2) {
-  background-image: url("../images/bitmap_experiencing.png");
-  background-repeat: no-repeat; }
+  background-image: url("../images/passage_sm.jpg");
+  background-repeat: no-repeat;
+  background-size: 70px;
+  border-radius: 5px; }
 
 .portofolio__footer__map__navigation__list__date {
   font-size: 18px;
@@ -382,3 +386,17 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__footer__social_media__list__instagram svg:hover,
 .portofolio__main__research_photo__morroco__social_media__list_instagram svg:hover {
   fill: #c56565; }
+
+.portofolio__main__photograph__slider_active img {
+  width: 100%;
+  height: 230px;
+  border-radius: 5px; }
+
+.portofolio__main__photograph__slider_images {
+  display: flex;
+  flex-direction: row; }
+
+.portofolio__main__photograph__slider_images img {
+  width: 30%;
+  height: 50%;
+  border-radius: 5px; }
