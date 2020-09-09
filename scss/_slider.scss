@@ -18,5 +18,20 @@
   width: 40%;
   height: 50%;
   border-radius: 5px;
-  padding-inline-end: 10px;
+  margin-inline-end: 10px;
+}
+
+@media(min-width: 1200px) {
+  .portofolio__main__photograph__slider_images {
+    overflow-x: none;
+  }
+
+  .portofolio__main__photograph__slider_active img {
+    height: 100%;
+  }
+  .portofolio__main__photograph__slider_images img {
+  width: 11.5%;
+  height: 50%;
+  border-radius: 5px;
+  }
 }
