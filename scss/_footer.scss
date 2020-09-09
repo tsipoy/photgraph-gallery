@@ -86,3 +86,27 @@
   margin-inline-start: -14px;
   padding-inline-start: 14px;
 }
+
+@media(min-width: 1200px) {
+  .portofolio__footer {
+    @include  reset-max-width;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portofolio__footer__homepage {
+    padding-inline-start: 130px;
+  }
+
+  .portofolio__footer__map {
+    padding-block-start: 8px;
+  }
+
+  .portofolio__footer__copyright {
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
