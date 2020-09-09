@@ -58,6 +58,10 @@
 }
 
 .portofolio__main__research_photo__header_heading {
+  display: $current-decoration;
+}
+
+.portofolio__main__research_photo__morroco__header_heading {
   @include reset-h2-h3;
 }
 
@@ -77,8 +81,13 @@
   }
 
   .portofolio__main__research_photo {
-    max-width: 570px;
-    margin-inline-start: auto;
-    margin-block-start: -259px;
+    display: flex;
+    flex-direction: row;
   }
+
+  .portofolio__main__research_photo__morroco {
+    padding-inline-start: 106px;
+    max-width: 518px;
+    padding-block-start: 87px;
+}
 }
