@@ -17,3 +17,8 @@ h3 {
 li {
   list-style: $current-decoration;
 }
+
+a:hover,
+li a {
+  text-decoration: underline;
+}
