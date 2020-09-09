@@ -6,9 +6,10 @@
 }
 
 .portofolio__main__photograph__header_heading {
-    font-size: 52px;
-    line-height: 64px;
-    color: #000000;
+  max-width: 457px;
+  font-size: 52px;
+  line-height: 64px;
+  color: #000000;
 }
 
 .portofolio__main__back {
@@ -22,9 +23,12 @@
   content: " ← ";
 }
 
-
 .portofolio__main__photograph__slider_description {
   @include reset-size-black-normal-text;
+  max-width: 585px;
+} 
+
+.portofolio__main__photograph__slider_description:nth-of-type(2) {
   padding-block-end: 82px;
 }
 
