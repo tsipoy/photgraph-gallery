@@ -43,6 +43,7 @@
   padding-block-end: 11px;
   padding-block-start: 13px;
   margin-block-start: 25px;
+  margin-block-end: 16px;
 }
 
 .portofolio__main__updating__form__submit {
@@ -53,8 +54,45 @@
   text-align: center;
   color: #FFFFFF;
   border-radius: 5px;
-  padding-block-end: 11px;
+  margin-inline-start: 0;
   padding-block-start: 13px;
+  padding-block-end: 11px;
   padding-inline-end: 45px;
   padding-inline-start: 45px;
+}
+
+@media(min-width: 1200px) {
+  .portofolio__main__updating {
+    margin-inline-start: -13%;
+    padding-inline-start: 13%;
+    margin-inline-end: -13%;
+  }
+  .portofolio__main__updating__form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portofolio__main__updating__form__heading {
+    max-width: 382px;
+  }
+
+  .portofolio__main__updating__form__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 218px;
+    padding-block-start: 52px;
+  }
+
+  .portofolio__main__updating__form__input {
+    padding-block-end: 19px;
+    padding-inline-end: 72px;
+    margin-inline-end: 54px;
+  }
+
+  .portofolio__main__updating__form__submit{
+    margin-block-start: 42px;
+    margin-block-end: 87px;
+    padding-inline-end: 25px;
+    padding-inline-start: 25px;
+  }
 }
