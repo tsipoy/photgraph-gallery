@@ -49,6 +49,10 @@ h3 {
 li {
   list-style: none; }
 
+a:hover,
+li a {
+  text-decoration: underline; }
+
 .portofolio__header {
   background-color: #434CCC;
   color: #FFFFFF;
@@ -66,6 +70,10 @@ li {
 
 .portofolio_header_homepage {
   display: none; }
+
+.portofolio__header_heading__menu_navigation__lists_heading__link {
+  text-decoration: none;
+  color: #FFFFFF; }
 
 .portofolio__header__label {
   position: absolute;
@@ -115,6 +123,12 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   z-index: 1; }
 
 @media (min-width: 1200px) {
+  .portofolio__header {
+    max-width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-end: 10%;
+    padding-inline-start: 10%; }
   .portofolio__header_heading__menu_navigation__lists {
     display: flex;
     flex-direction: row; }
@@ -127,7 +141,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     box-shadow: none;
     transform: none;
     transition: none;
-    padding-block-start: 7px; }
+    padding-block-start: 7px;
+    padding-inline-end: 10%; }
   .portofolio__header .portofolio__header__label {
     display: none; }
   .portofolio__header__menu_svg {
@@ -137,6 +152,14 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   background-color: rgba(67, 76, 204, 0.05);
   padding-inline-start: 14px;
   margin-block-start: -20px; }
+
+@media (min-width: 1200px) {
+  .portofolio__main {
+    max-width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-end: 10%;
+    padding-inline-start: 10%; } }
 
 .portofolio__main__photograph__header {
   display: flex;
@@ -160,9 +183,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 
 .portofolio__main__back::before {
   content: " ← "; }
-
-.portofolio__main__back:hover {
-  text-decoration: underline; }
 
 .portofolio__main__photograph__slider_description {
   font-size: 18px;
@@ -216,6 +236,14 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   padding-block-end: 40px;
   padding-block-start: 40px; }
 
+@media (min-width: 1200px) {
+  .portofolio__main__photograph__about {
+    max-width: 443px; }
+  .portofolio__main__research_photo {
+    max-width: 570px;
+    margin-inline-start: auto;
+    margin-block-start: -259px; } }
+
 .portofolio__main__updating {
   background-color: #FFDD78;
   margin-inline-start: -14px;
@@ -257,7 +285,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   padding-inline-start: 16px;
   padding-block-end: 11px;
   padding-block-start: 13px;
-  margin-block-start: 25px; }
+  margin-block-start: 25px;
+  margin-block-end: 16px; }
 
 .portofolio__main__updating__form__submit {
   background-color: #434CCC;
@@ -266,11 +295,40 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+  text-decoration: none;
   border-radius: 5px;
-  padding-block-end: 11px;
+  margin-inline-start: 0;
   padding-block-start: 13px;
+  padding-block-end: 11px;
   padding-inline-end: 45px;
   padding-inline-start: 45px; }
+
+@media (min-width: 1200px) {
+  .portofolio__main__updating {
+    margin-inline-start: -13%;
+    padding-inline-start: 13%;
+    margin-inline-end: -13%; }
+  .portofolio__main__updating__form {
+    display: flex;
+    flex-direction: row; }
+  .portofolio__main__updating__form__heading {
+    max-width: 382px; }
+  .portofolio__main__updating__form__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 218px;
+    padding-block-start: 52px; }
+  .portofolio__main__updating__form__label {
+    margin-inline-start: -77px; }
+  .portofolio__main__updating__form__input {
+    padding-block-end: 19px;
+    padding-inline-end: 142px;
+    margin-inline-end: 54px; }
+  .portofolio__main__updating__form__submit {
+    margin-block-start: 42px;
+    margin-block-end: 87px;
+    padding-inline-end: 25px;
+    padding-inline-start: 25px; } }
 
 .portofolio__footer {
   background-color: #FFFFFF;
@@ -361,6 +419,25 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   margin-inline-end: -15px;
   margin-inline-start: -14px;
   padding-inline-start: 14px; }
+
+@media (min-width: 1200px) {
+  .portofolio__footer {
+    max-width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-end: 10%;
+    padding-inline-start: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .portofolio__footer__homepage {
+    padding-inline-start: 130px; }
+  .portofolio__footer__map {
+    padding-block-start: 8px; }
+  .portofolio__footer__copyright {
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
 .portofolio__main__research_photo__morroco__social_media {
   display: flex;
