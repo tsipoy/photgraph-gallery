@@ -73,3 +73,15 @@
   padding-block-end: 40px;
   padding-block-start: 40px;  
 }
+
+@media(min-width: 1200px) {
+  .portofolio__main__photograph__about {
+    max-width: 443px;
+  }
+
+  .portofolio__main__research_photo {
+    max-width: 570px;
+    margin-inline-start: auto;
+    margin-block-start: -259px;
+  }
+}
