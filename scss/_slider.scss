@@ -4,13 +4,19 @@
   border-radius: 5px;
 }
 
+.portofolio__main__photograph__slider_active {
+  padding-inline-end: 15px;
+}
+
 .portofolio__main__photograph__slider_images {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
 }
 
 .portofolio__main__photograph__slider_images img {
-  width: 30%;
+  width: 40%;
   height: 50%;
   border-radius: 5px;
+  padding-inline-end: 10px;
 }
