@@ -3,3 +3,9 @@
   padding-inline-start: $padding-inline-start;
   margin-block-start: -20px;
 }
+
+@media(min-width: 1200px) {
+  .portofolio__main {
+    @include  reset-max-width;
+  }
+}
