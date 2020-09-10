@@ -45,6 +45,11 @@
   text-decoration: $current-decoration;
 }
 
+.portofolio__footer__homepage__navigation_list {
+  padding-block-end: 8px;
+
+}
+
 // map
 
 .portofolio__footer__map__navigation__list__experience {
@@ -102,11 +107,6 @@
   .portofolio__footer__header_description {
     padding-block-start: 8px;
     padding-block-end: 0;
-  }
-
-  .portofolio__footer__homepage__navigation_list {
-    padding-block-end: 8px;
-
   }
 
   .portofolio__footer__social_media {
