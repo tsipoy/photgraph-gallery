@@ -26,7 +26,7 @@
 
 @media(min-width: 1200px) {
   .portofolio__main__photograph__slider_images {
-    overflow-x: none;
+    overflow-x: $current-decoration;
   }
 
   .portofolio__main__photograph__slider_images img {
@@ -34,5 +34,3 @@
   border-radius: 5px;
   }
 }
-
-
