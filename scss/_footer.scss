@@ -40,8 +40,9 @@
   padding-inline-start: 0;
 }
 
-.portofolio__footer__homepage__navigation_list {
+.portofolio__footer__homepage__navigation_list__link {
   @include reset-size-gray-normal-text;
+  text-decoration: $current-decoration;
 }
 
 // map
@@ -94,9 +95,23 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .portofolio__footer__homepage {
-    padding-inline-start: 130px;
+  .portofolio__footer__header {
+    max-width: 210px;
   }
+
+  .portofolio__footer__header_description {
+    padding-block-start: 8px;
+    padding-block-end: 0;
+  }
+
+  .portofolio__footer__homepage__navigation_list {
+    padding-block-end: 8px;
+
+  }
+
+  .portofolio__footer__social_media {
+    padding-block-start: 10px;
+}
 
   .portofolio__footer__map {
     padding-block-start: 8px;
