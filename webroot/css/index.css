@@ -130,6 +130,11 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-inline-end: auto;
     padding-inline-end: 10%;
     padding-inline-start: 10%; }
+  .portofolio__header_heading {
+    font-size: 40px;
+    line-height: 48px;
+    margin-block-end: 0;
+    margin-block-start: 0; }
   .portofolio__header_heading__menu_navigation__lists {
     display: flex;
     flex-direction: row; }
@@ -248,9 +253,16 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 @media (min-width: 1200px) {
   .portofolio__main__photograph__about {
     max-width: 443px; }
+  .portofolio__main__photograph__header_heading {
+    font-size: 72px;
+    line-height: 80px; }
   .portofolio__main__research_photo {
     display: flex;
     flex-direction: row; }
+  .portofolio__main__research_photo__morroco__header_heading {
+    font-size: 52px;
+    line-height: 64px;
+    margin-block-start: 18px; }
   .portofolio__main__research_photo__morroco {
     padding-inline-start: 146px;
     max-width: 518px;
@@ -324,6 +336,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     display: flex;
     flex-direction: row; }
   .portofolio__main__updating__form__heading {
+    font-size: 52px;
+    line-height: 64px;
     max-width: 382px; }
   .portofolio__main__updating__form__wrapper {
     display: flex;
@@ -391,6 +405,9 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   mix-blend-mode: normal;
   text-decoration: none; }
 
+.portofolio__footer__homepage__navigation_list {
+  padding-block-end: 8px; }
+
 .portofolio__footer__map__navigation__list__experience {
   font-size: 16px;
   line-height: 24px;
@@ -447,8 +464,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   .portofolio__footer__header_description {
     padding-block-start: 8px;
     padding-block-end: 0; }
-  .portofolio__footer__homepage__navigation_list {
-    padding-block-end: 8px; }
   .portofolio__footer__social_media {
     padding-block-start: 10px; }
   .portofolio__footer__map {

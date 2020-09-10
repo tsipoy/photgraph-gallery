@@ -23,6 +23,11 @@ $padding-inline-start: 14px;
   color: #000000; 
 }
 
+@mixin reset-h2-h3-desktop {
+  font-size: 52px;
+  line-height: 64px; 
+}
+
 @mixin reset-icons {
   display: flex;
   flex-direction: row;

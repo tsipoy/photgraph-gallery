@@ -82,10 +82,19 @@
   .portofolio__main__photograph__about {
     max-width: 443px;
   }
+  .portofolio__main__photograph__header_heading {
+    font-size: 72px;
+    line-height: 80px;
+  }
 
   .portofolio__main__research_photo {
     display: flex;
     flex-direction: row;
+  }
+
+  .portofolio__main__research_photo__morroco__header_heading {
+    @include reset-h2-h3-desktop;
+    margin-block-start: 18px;
   }
 
   .portofolio__main__research_photo__morroco {

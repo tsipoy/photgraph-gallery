@@ -74,6 +74,7 @@
   }
 
   .portofolio__main__updating__form__heading {
+    @include reset-h2-h3-desktop;
     max-width: 382px;
   }
 
