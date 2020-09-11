@@ -478,7 +478,12 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    margin-inline-start: -139px;
+    margin-inline-end: -139px; }
+  .portofolio__footer__copyright_modifying {
+    padding-inline-start: 115px;
+    padding-inline-end: 115px; } }
 
 .portofolio__main__research_photo__morroco__social_media {
   display: flex;

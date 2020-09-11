@@ -126,6 +126,13 @@
     flex-direction: $row-direction;
     justify-content: $flex-space;
     flex-wrap: $flex-wrapping;
+    margin-inline-start: -139px;
+    margin-inline-end: -139px;
+  }
+
+  .portofolio__footer__copyright_modifying {
+    padding-inline-start: 115px;
+    padding-inline-end: 115px;
   }
 
 }
