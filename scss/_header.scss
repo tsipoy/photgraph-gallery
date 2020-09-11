@@ -7,8 +7,8 @@
   --none-decoration: #{ $none-decoration };
   --auto-margin: #{ $auto-margin };
   --text-gray-line-height: #{ $text-gray-line-height };
-  --text-black-line-heigth: #{ $text-black-line-height};
-  --z-index: #{ $z-index};
+  --text-black-line-heigth: #{ $text-black-line-height };
+  --z-index: #{ $z-index };
 }
 
 .portofolio__header {
@@ -26,7 +26,7 @@
   padding-block-start: var(--gray-font-size);
   padding-block-end: var(--gray-font-size);
   margin-block-start: var(--default-margin);
-  text-transform: uppercase;
+  text-transform: $text-transform;
 }
 
 .portofolio_header_homepage {
@@ -63,7 +63,7 @@
 .portofolio__header_heading__menu_navigation {
   padding: var(--text-gray-line-height);
   position: absolute;
-  z-index: var(calc( --z-index + 2));
+  z-index: 3;
   top: var(--default-margin);
   right: var(--default-margin);
   bottom: var(--default-margin);
@@ -85,16 +85,13 @@
   right: var(--default-margin);
   bottom: var(--default-margin);
   left: var(--default-margin);
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,.25);
 }
 
 body > [type="checkbox"]:checked ~ .portofolio__main {
   z-index: var( --z-index); 
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $min-width) {
   .portofolio__header {
     @include  reset-max-width;
   }

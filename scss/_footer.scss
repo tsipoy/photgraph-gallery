@@ -13,7 +13,7 @@
   font-size: $text-gray-line-height;
   line-height: $text-black-line-height;
   color: #000000;
-  text-transform: uppercase;
+  text-transform: $text-transform;
   font-style: normal;
 }
 
@@ -96,7 +96,7 @@
   padding-inline-start: $padding-inline-start;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $min-width) {
   .portofolio__footer {
     @include  reset-max-width;
     display: grid;
