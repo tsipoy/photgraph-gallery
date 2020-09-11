@@ -7,8 +7,8 @@
 
 .portofolio__main__photograph__header_heading {
   max-width: 457px;
-  font-size: 52px;
-  line-height: 64px;
+  font-size: $desktop-font-size;
+  line-height: $desktop-line-height;
   color: #000000;
 }
 
@@ -16,7 +16,7 @@
   @include  reset-size-gray-normal-text;
   padding-block-end: 61px;
   margin-block-start: -14px;
-  text-decoration-line: $current-decoration;
+  text-decoration-line: $none-decoration;
 }
 
 .portofolio__main__back::before {
@@ -41,6 +41,7 @@
   padding-block-end: 75px;
 }
 
+
 .portofolio__main__photograph__about__navigation__camera_list__date,
 .portofolio__main__photograph__about__navigation__camera_list__location,
 .portofolio__main__photograph__about__navigation__camera_list__camera,
@@ -61,13 +62,8 @@
 }
 
 .portofolio__main__research_photo__header_heading {
-  display: $current-decoration;
+  display: $none-decoration;
 }
-
-.portofolio__main__research_photo__morroco__header_heading {
-  @include reset-h2-h3;
-}
-
 .portofolio__main__research_photo__morroco_features {
   @include reset-size-black-normal-text;
 }
@@ -93,13 +89,12 @@
   }
 
   .portofolio__main__research_photo__morroco__header_heading {
-    @include reset-h2-h3-desktop;
-    margin-block-start: 18px;
+    margin-block-start: $text-black-font-size;
   }
 
   .portofolio__main__research_photo__morroco {
     padding-inline-start: 146px;
     max-width: 518px;
     padding-block-start: 87px;
-}
+  }
 }

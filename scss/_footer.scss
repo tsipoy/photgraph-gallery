@@ -1,5 +1,8 @@
+
+@import"variables";
+
 .portofolio__footer {
-  background-color: #FFFFFF;
+  background-color: $text-gray-font-size;
   padding-block-start: 75px;
   padding-inline-start: $padding-inline-start;
   padding-inline-end: 15px;
@@ -7,8 +10,8 @@
 
 // footer header
 .portofolio__footer__header_heading {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: $text-gray-font-size;
+  line-height: $text-black-line-height;
   color: #000000;
   text-transform: uppercase;
   font-style: normal;
@@ -42,7 +45,7 @@
 
 .portofolio__footer__homepage__navigation_list__link {
   @include reset-size-gray-normal-text;
-  text-decoration: $current-decoration;
+  text-decoration: $none-decoration;
 }
 
 .portofolio__footer__homepage__navigation_list {
@@ -89,8 +92,8 @@
   padding-block-end: 28px;
   padding-block-start: 26px;
   margin-inline-end: -15px;
-  margin-inline-start: -14px;
-  padding-inline-start: 14px;
+  margin-inline-start: -($padding-inline-start);
+  padding-inline-start: $padding-inline-start;
 }
 
 @media(min-width: 1200px) {
@@ -106,7 +109,7 @@
 
   .portofolio__footer__header_description {
     padding-block-start: 8px;
-    padding-block-end: 0;
+    padding-block-end: $default_margin;
   }
 
   .portofolio__footer__social_media {
@@ -119,9 +122,10 @@
 
   .portofolio__footer__copyright {
     grid-column: 1 / 5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: $display-flex;
+    flex-direction: $row-direction;
+    justify-content: $flex-space;
+    flex-wrap: $flex-wrapping;
   }
 
 }

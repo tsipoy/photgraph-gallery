@@ -14,11 +14,21 @@ h3 {
   font-family: 'DM Serif Display', serif;
 }
 
+h2, h3 {
+  @include reset-h2-h3;
+}
+
 li {
-  list-style: $current-decoration;
+  list-style: $none-decoration;
 }
 
 a:hover,
 li a {
   text-decoration: underline;
+}
+
+@media(min-width: 1200px) {
+  h2, h3 {
+    @include reset-h2-h3-desktop;
+  }
 }
