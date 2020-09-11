@@ -35,7 +35,9 @@
 
 .portofolio__header_heading__menu_navigation__lists_heading__link {
   text-decoration: var(--none-decoration);
+  line-height: var(--text-gray-line-height);
   color: $header-color;
+  
 }
 
 .portofolio__header__label {

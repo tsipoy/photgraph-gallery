@@ -27,7 +27,7 @@ li a {
   text-decoration: underline;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $min-width) {
   h2, h3 {
     @include reset-h2-h3-desktop;
   }

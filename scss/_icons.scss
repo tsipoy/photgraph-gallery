@@ -1,3 +1,5 @@
+@import"variables";
+
 .portofolio__main__research_photo__morroco__social_media {
   @include  reset-icons;
   padding-block-end: 105px;
@@ -15,7 +17,7 @@
 
 .portofolio__footer__social_media__list__twittter svg:hover,
 .portofolio__main__research_photo__morroco__social_media__list_twitter svg:hover {
-  fill: lightblue;
+  fill: $text-gray-color;
 }
 
 .portofolio__footer__social_media__list__instagram svg:hover,

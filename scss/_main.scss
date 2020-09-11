@@ -1,10 +1,12 @@
+@import"variables";
+
 .portofolio__main {
   background-color: rgba(67, 76, 204, 0.05);
   padding-inline-start: $padding-inline-start;
   margin-block-start: -20px;
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $min-width) {
   .portofolio__main {
     @include  reset-max-width;
   }

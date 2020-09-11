@@ -1,5 +1,7 @@
+@import"variables";
+
 .portofolio__main__photograph__header {
-  display: flex;
+  display: $display-flex;
   flex-direction: column-reverse;
   padding-block-end: 65px;
   padding-block-start: 61px;
@@ -15,7 +17,7 @@
 .portofolio__main__back {
   @include  reset-size-gray-normal-text;
   padding-block-end: 61px;
-  margin-block-start: -14px;
+  margin-block-start: -($padding-inline-start);
   text-decoration-line: $none-decoration;
 }
 
@@ -70,11 +72,11 @@
 
 .portofolio__main__research_photo__morroco_experiences {
   @include reset-size-gray-normal-text;
-  padding-block-end: 40px;
-  padding-block-start: 40px;  
+  padding-block-end: $header-font-size;
+  padding-block-start: $header-font-size;  
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $min-width) {
   .portofolio__main__photograph__about {
     max-width: 443px;
   }
@@ -84,8 +86,8 @@
   }
 
   .portofolio__main__research_photo {
-    display: flex;
-    flex-direction: row;
+    display: $display-flex;
+    flex-direction: $row-direction;
   }
 
   .portofolio__main__research_photo__morroco__header_heading {
