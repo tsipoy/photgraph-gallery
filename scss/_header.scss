@@ -1,41 +1,52 @@
 @import"variables";
 
+:root {
+  --gray-font-size: #{ $text-gray-font-size };
+  --default-margin: #{ $default_margin };
+  --padding-inline: #{ $padding-inline-start };
+  --none-decoration: #{ $none-decoration };
+  --auto-margin: #{ $auto-margin };
+  --text-gray-line-height: #{ $text-gray-line-height };
+  --text-black-line-heigth: #{ $text-black-line-height};
+  --z-index: #{ $z-index};
+}
+
 .portofolio__header {
   background-color: $bg-header;
   color: $header-color;
   position: relative;
-  padding-inline-end: $padding-inline-start;
-  padding-inline-start: $padding-inline-start;
+  padding-inline-end: var(--padding-inline);
+  padding-inline-start: var(--padding-inline);
 }
 
 .portofolio__header_heading {
-  font-size: $text-gray-font-size;
-  line-height: $text-black-line-height;
-  color: $text-gray-font-size;
-  padding-block-start: $text-gray-font-size;
-  padding-block-end: $text-gray-font-size;
-  margin-block-start: $default_margin;
+  font-size: var( --text-gray-line-height);
+  line-height:var(--text-black-line-heigth);
+  color: $header-color;
+  padding-block-start: var(--gray-font-size);
+  padding-block-end: var(--gray-font-size);
+  margin-block-start: var(--default-margin);
   text-transform: uppercase;
 }
 
 .portofolio_header_homepage {
-  display: $none-decoration;
+  display: var(--none-decoration);
 }
 
 .portofolio__header_heading__menu_navigation__lists_heading__link {
-  text-decoration: $none-decoration;
-  color: $text-gray-font-size;
+  text-decoration: var(--none-decoration);
+  color: $header-color;
 }
 
 .portofolio__header__label {
   position: absolute;
   top: 33%;
-  right: $default_margin;
-  z-index: 1; 
+  right: var(--default-margin);
+  z-index: var( --z-index); 
 }
 
 .portofolio__header_heading__menu_navigation__lists_heading {
-  padding-block-end: $text-gray-font-size;
+  padding-block-end: var(--gray-font-size);
 }
 
 .portofolio__header__menu_svg {
@@ -46,16 +57,16 @@
 
 .portofolio__header__label__a11y {
   color: transparent;
-  padding: $text-gray-font-size;
+  padding: var(--gray-font-size);
 }
 
 .portofolio__header_heading__menu_navigation {
-  padding: 1rem;
+  padding: var(--text-gray-line-height);
   position: absolute;
-  z-index: 3;
-  top: $default_margin;
-  right: $default_margin;
-  bottom: $default_margin;
+  z-index: var(calc( --z-index + 2));
+  top: var(--default-margin);
+  right: var(--default-margin);
+  bottom: var(--default-margin);
   width: 150px;
   height: 165px;
   box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
@@ -64,23 +75,23 @@
 }
 
 [type="checkbox"]:checked ~ .portofolio__header .portofolio__header_heading__menu_navigation {
-  transform: translateX($default_margin);
-  background-color:#434CCC;
+  transform: translateX(var(--default-margin));
+  background-color: $bg-header;
 }
 
 [type="checkbox"]:checked ~ .portofolio__header .portofolio__header__label {
   position: absolute;
   z-index: 2;
-  right: $default_margin;
-  bottom: $default_margin;
-  left: $default_margin;
+  right: var(--default-margin);
+  bottom: var(--default-margin);
+  left: var(--default-margin);
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,.25);
 }
 
 body > [type="checkbox"]:checked ~ .portofolio__main {
-  z-index: 1; 
+  z-index: var( --z-index); 
 }
 
 @media(min-width: 1200px) {
@@ -89,36 +100,36 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   }
 
   .portofolio__header_heading {
-    font-size: 40px;
-    line-height: 48px;
-    margin-block-end: $default_margin;
+    font-size:$header-font-size;
+    line-height: $header-line-height;
+    margin-block-end: var(--default-margin);
   }
 
   .portofolio__header_heading__menu_navigation__lists {
-    display: flex;
-    flex-direction: row;
+    display: $display-flex;
+    flex-direction: $row-direction;
   }
 
   .portofolio__header_heading__menu_navigation__lists_heading {
-    padding-inline-end: $text-black-line-height;
+    padding-inline-end:var(--text-black-line-heigth);
   }
 
   .portofolio__header_heading__menu_navigation {
     background-color: transparent;
-    width: $auto-margin;
-    height: $auto-margin;
-    box-shadow: none;
-    transform: none;
-    transition: none;
+    width: var(--auto-margin);
+    height: var(--auto-margin);
+    box-shadow: var(--none-decoration);
+    transform: var(--none-decoration);
+    transition: var(--none-decoration);
     padding-block-start: 7px;
     padding-inline-end: $body-padding-inline;
   }
 
   .portofolio__header .portofolio__header__label {
-    display: $none-decoration;
+    display: var(--none-decoration);
   }
 
   .portofolio__header__menu_svg {
-    display: $none-decoration;
+    display: var(--none-decoration);
   }
 }

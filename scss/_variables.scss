@@ -3,6 +3,7 @@ $bg-header: #434CCC;
 $none-decoration: none;
 $header-color:  #FFFFFF;
 $padding-inline-start: 14px;
+$z-index: 1;
 
 // Reset texts
 
@@ -38,6 +39,7 @@ $body-max-width: 80%;
 $auto-margin: auto;
 $body-padding-inline: 10%;
 
+// mixins
 @mixin reset-size-gray-normal-text {
   font-size: $text-gray-font-size;
   line-height: $text-gray-line-height;
