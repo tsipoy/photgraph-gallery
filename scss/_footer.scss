@@ -1,6 +1,10 @@
 
 @import"variables";
 
+footer {
+  display: none;
+}
+
 .portofolio__footer {
   background-color: $text-gray-font-size;
   padding-block-start: 75px;
@@ -101,6 +105,10 @@
     @include  reset-max-width;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portofolio__footer {
+    display: none;
   }
 
   .portofolio__footer__header {

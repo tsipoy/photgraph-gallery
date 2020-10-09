@@ -63,6 +63,9 @@ li a {
     font-size: 52px;
     line-height: 64px; } }
 
+header {
+  display: none; }
+
 :root {
   --gray-font-size: 16px;
   --default-margin: 0;
@@ -149,6 +152,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-inline-end: auto;
     padding-inline-end: 10%;
     padding-inline-start: 10%; }
+  .portofolio__main__research_photo {
+    display: none; }
   .portofolio__header_heading {
     font-size: 40px;
     line-height: 48px;
@@ -177,13 +182,26 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   padding-inline-start: 14px;
   margin-block-start: -20px; }
 
+.portofolio__main__research_photo,
+.portofolio__main__updating,
+p,
+h2,
+.portofolio__main__back {
+  display: none; }
+
 @media (min-width: 1200px) {
   .portofolio__main {
     max-width: 80%;
     margin-inline-start: auto;
     margin-inline-end: auto;
     padding-inline-end: 10%;
-    padding-inline-start: 10%; } }
+    padding-inline-start: 10%; }
+  .portofolio__main__research_photo,
+  .portofolio__main__updating,
+  p,
+  h2,
+  .portofolio__main__back {
+    display: none; } }
 
 .portofolio__main__photograph__header {
   display: flex;
@@ -360,6 +378,9 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     padding-inline-end: 25px;
     padding-inline-start: 25px; } }
 
+footer {
+  display: none; }
+
 .portofolio__footer {
   background-color: 16px;
   padding-block-start: 75px;
@@ -464,6 +485,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     padding-inline-start: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+  .portofolio__footer {
+    display: none; }
   .portofolio__footer__header {
     max-width: 210px; }
   .portofolio__footer__header_description {
@@ -518,13 +541,12 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__main__photograph__slider_active {
   padding-inline-end: 15px; }
 
-.portofolio__main__photograph__slider_images {
+.lists {
   display: flex;
   flex-direction: row;
   overflow-x: auto; }
 
 .portofolio__main__photograph__slider_images img {
-  width: 40%;
   border-radius: 5px;
   margin-inline-end: 10px;
   opacity: 0.33; }

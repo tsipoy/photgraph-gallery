@@ -1,5 +1,8 @@
 @import"variables";
 
+header {
+  display: none;
+}
 :root {
   --gray-font-size: #{ $text-gray-font-size };
   --default-margin: #{ $default_margin };
@@ -96,6 +99,10 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 @media(min-width: $min-width) {
   .portofolio__header {
     @include  reset-max-width;
+  }
+
+  .portofolio__main__research_photo {
+    display: none;
   }
 
   .portofolio__header_heading {
