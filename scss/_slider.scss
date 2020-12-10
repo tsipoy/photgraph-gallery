@@ -16,15 +16,17 @@
 }
 
 .portofolio__main__photograph__slider_images img {
-  // width: 100%;
   border-radius: 5px;
   margin-inline-end: 10px;
-  // opacity: 0.33;
 }
 
-// .portofolio__main__photograph__slider_images img:nth-of-type(1) {
-//   opacity: 1;
-// }
+.non-active picture img {
+  opacity: 0.33;
+}
+
+.non-active picture img:hover {
+  opacity: inherit;
+}
 
 @media(min-width: $min-width) {
   .portofolio__main__photograph__slider_images {
@@ -47,14 +49,6 @@
   
   .active picture img {
     @include reset-images-responsive;
-  }
-  
-  .non-active picture img {
-    opacity: 0.33;
-  }
-
-  .non-active picture img:hover {
-    opacity: inherit;
   }
   
   .non-active {

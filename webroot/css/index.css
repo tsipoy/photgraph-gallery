@@ -536,6 +536,12 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   border-radius: 5px;
   margin-inline-end: 10px; }
 
+.non-active picture img {
+  opacity: 0.33; }
+
+.non-active picture img:hover {
+  opacity: inherit; }
+
 @media (min-width: 1200px) {
   .portofolio__main__photograph__slider_images {
     overflow-x: none; }
@@ -551,10 +557,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   .active picture img {
     width: 100%;
     height: auto; }
-  .non-active picture img {
-    opacity: 0.33; }
-  .non-active picture img:hover {
-    opacity: inherit; }
   .non-active {
     padding-inline-start: 11px; }
   .non-active:last-of-type {
