@@ -6,28 +6,9 @@
   margin-block-start: -20px;
 }
 
-.portofolio__main__research_photo,
-.portofolio__main__updating,
-p,
-h2,
-.portofolio__main__back 
-{
-  display: none;
-}
 
 @media(min-width: $min-width) {
   .portofolio__main {
     @include  reset-max-width;
   }
-
-  .portofolio__main__research_photo,
-  .portofolio__main__updating,
-  p,
-  h2,
-  .portofolio__main__back 
-  {
-    display: none;
-  }
-
-
 }
