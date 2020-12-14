@@ -33,5 +33,5 @@ You'll want to run the `scss:watch` task when you're developing this project.
 ## Contact
 
 -   Website [demo](https://photography-page-natacha.netlify.app/)
--   GitHub [tsipoy](https://github.com/tsipoy/front-end-finals/tree/sliders/scss)
+-   GitHub [tsipoy](https://github.com/tsipoy/front-end-finals/tree/sliders/)
 
