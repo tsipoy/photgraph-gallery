@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio detail</title>
+  <title>Photograf</title>
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
   <input type="checkbox" id="homepage" class="portofolio_header_homepage">
+  <label for="homepage" class="close_modal">Close modal</label>
   <header class="portofolio__header">
-    <h1 class="portofolio__header_heading">Photograph</h1>
+    <h1 class="portofolio__header_heading">Photograf</h1>
     <label for="homepage" class="portofolio__header__label">
       <span class="portofolio__header__label__a11y">Open menu</span>
     </label>
@@ -228,7 +229,7 @@
   <footer class="portofolio__footer">
     <div class="portofolio__footer__header">
       <h2 class="portofolio__footer__header_heading">
-        Photograph
+        Photograf
       </h2>
       <p class="portofolio__footer__header_description">The personal website of Jesse McJessesen, professional
         photographer.</p>
@@ -283,16 +284,22 @@
       </ul>
     </div>
     <div class="portofolio__footer__map">
-      <nav class="portofolio__footer__map__navigation">
-        <ul class="portofolio__footer__map__navigation__list">
-          <li class="portofolio__footer__map__navigation__list__experience">Rust, pumpkin, tans, and spices.</li>
-          <li class="portofolio__footer__map__navigation__list__date">July 15, 2019</li>
-        </ul>
-        <ul class="portofolio__footer__map__navigation__list">
-          <li class="portofolio__footer__map__navigation__list__experience">Experiencing Japan</li>
-          <li class="portofolio__footer__map__navigation__list__date">July 10, 2019</li>
-        </ul>
-      </nav>
+      <div class="portofolio__footer__map__wrapper">
+        <div class="portofolio__footer__map__profile__wrapper">
+          <img src="../webroot/images/woman_sm.jpg" class="portofolio__footer__map__profile__profile_photo" alt="Woman">
+          <ul class="portofolio__footer__map__profile__lists">
+            <li class="portofolio__footer__map__profile__lists__experience">Rust, pumpkin, tans, and spices.</li>
+            <li class="portofolio__footer__map__profile__lists__date">July 15, 2019</li>
+          </ul>
+        </div>
+        <div class="portofolio__footer__map__profile__wrapper">
+          <img src="../webroot/images/passage_sm.jpg" class="portofolio__footer__map__profile__profile_photo" alt="Passage">
+          <ul class="portofolio__footer__map__profile__lists">
+            <li class="portofolio__footer__map__profile__lists__experience">Experiencing Japan</li>
+            <li class="portofolio__footer__map__profile__lists__date">July 10, 2019</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="portofolio__footer__copyright">
       <p class="portofolio__footer__copyright_modifying">Created by Laaqiq, modified by Onja</p>

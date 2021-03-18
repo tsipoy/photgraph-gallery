@@ -20,8 +20,13 @@
   margin-inline-end: 10px;
 }
 
+.active picture img {
+  max-width: 137px;
+}
+
 .non-active picture img {
   opacity: 0.33;
+  max-width: 137px;
 }
 
 .non-active picture img:hover {
@@ -45,7 +50,9 @@
 
   .active {
     margin-inline-end: -11px;
+    padding-inline-end: 10px;
   } 
+
   
   .active picture img {
     @include reset-images-responsive;
@@ -57,6 +64,7 @@
 
   .non-active:last-of-type {
     margin-inline-start: -11px;
+    padding-inline-start: 21px;
   }
     
   .non-active picture img {
