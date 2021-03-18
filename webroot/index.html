@@ -320,17 +320,5 @@
     window.addEventListener("click", handleClick);
   </script>
 </body>
-<script>
-  const bigImage = document.querySelector("#current_image");
-
-  const handleClick = (e) => {
-    const newAnchore = e.target.closest(".images_links");
-    if (newAnchore) {
-      e.preventDefault();
-      bigImage.querySelector("img").src = newAnchore.href
-    }
-  }
-  window.addEventListener("click", handleClick);
-</script>
 
 </html>
