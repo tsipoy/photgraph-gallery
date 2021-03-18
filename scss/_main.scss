@@ -6,6 +6,7 @@
   margin-block-start: -20px;
 }
 
+
 @media(min-width: $min-width) {
   .portofolio__main {
     @include  reset-max-width;

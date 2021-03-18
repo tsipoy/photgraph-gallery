@@ -122,15 +122,19 @@ li a {
   top: var(--default-margin);
   right: var(--default-margin);
   bottom: var(--default-margin);
-  width: 150px;
+  width: 100%;
   height: 165px;
-  box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
+  box-shadow: -2px 2px 9px 2px rgba(0, 0, 0, 0.5);
   transform: translateY(-127%);
   transition: transform 0.3s; }
 
+.portofolio__header_heading__menu_navigation__lists {
+  text-align: center; }
+
 [type="checkbox"]:checked ~ .portofolio__header .portofolio__header_heading__menu_navigation {
   transform: translateX(var(--default-margin));
-  background-color: #434CCC; }
+  background-color: #434CCC;
+  z-index: 3; }
 
 [type="checkbox"]:checked ~ .portofolio__header .portofolio__header__label {
   position: absolute;
@@ -138,6 +142,24 @@ li a {
   right: var(--default-margin);
   bottom: var(--default-margin);
   left: var(--default-margin); }
+
+.close_modal {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+  background-color: rgba(0, 0, 0, 0.25); }
+  @media (min-width: 1200px) {
+    .close_modal {
+      background-color: initial; } }
+
+[type="checkbox"]:checked ~ .close_modal {
+  z-index: 2; }
 
 body > [type="checkbox"]:checked ~ .portofolio__main {
   z-index: var(--z-index); }
@@ -149,6 +171,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-inline-end: auto;
     padding-inline-end: 10%;
     padding-inline-start: 10%; }
+  .portofolio__main__research_photo {
+    display: none; }
   .portofolio__header_heading {
     font-size: 40px;
     line-height: 48px;
@@ -214,6 +238,13 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   line-height: 32px;
   color: #000000;
   max-width: 585px; }
+
+.lists::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
+
+.lists {
+  padding-inline-start: 0; }
 
 .portofolio__main__photograph__slider_description:nth-of-type(2) {
   padding-block-end: 82px; }
@@ -413,32 +444,27 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__footer__homepage__navigation_list {
   padding-block-end: 8px; }
 
-.portofolio__footer__map__navigation__list__experience {
+.portofolio__footer__map__profile__lists__experience {
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: normal;
-  padding-inline-start: 62px; }
+  mix-blend-mode: normal; }
 
-.portofolio__footer__map__navigation__list:nth-of-type(1) {
-  background-image: url("../images/woman_sm.jpg");
-  background-repeat: no-repeat;
-  background-size: 70px;
+.portofolio__footer__map__profile__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.portofolio__footer__map__profile__profile_photo {
+  max-width: 100px;
   border-radius: 5px; }
 
-.portofolio__footer__map__navigation__list:nth-of-type(2) {
-  background-image: url("../images/passage_sm.jpg");
-  background-repeat: no-repeat;
-  background-size: 70px;
-  border-radius: 5px; }
-
-.portofolio__footer__map__navigation__list__date {
+.portofolio__footer__map__profile__lists__date {
   font-size: 18px;
   line-height: 32px;
   color: #000000;
   font-size: 12px;
-  font-weight: bold;
-  padding-inline-start: 62px; }
+  font-weight: bold; }
 
 .portofolio__footer__copyright_modifying {
   font-size: 16px;
@@ -518,23 +544,46 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__main__photograph__slider_active {
   padding-inline-end: 15px; }
 
-.portofolio__main__photograph__slider_images {
+.lists {
   display: flex;
   flex-direction: row;
   overflow-x: auto; }
 
 .portofolio__main__photograph__slider_images img {
-  width: 40%;
   border-radius: 5px;
-  margin-inline-end: 10px;
-  opacity: 0.33; }
+  margin-inline-end: 10px; }
 
-.portofolio__main__photograph__slider_images img:nth-of-type(1) {
-  opacity: 1; }
+.active picture img {
+  max-width: 137px; }
+
+.non-active picture img {
+  opacity: 0.33;
+  max-width: 137px; }
+
+.non-active picture img:hover {
+  opacity: inherit; }
 
 @media (min-width: 1200px) {
   .portofolio__main__photograph__slider_images {
     overflow-x: none; }
   .portofolio__main__photograph__slider_images img {
     width: 11.5%;
-    border-radius: 5px; } }
+    margin-inline-end: 0;
+    border-radius: 5px; }
+  #current_image .rock_carving_large {
+    width: 100%;
+    height: auto; }
+  .active {
+    margin-inline-end: -11px;
+    padding-inline-end: 10px; }
+  .active picture img {
+    width: 100%;
+    height: auto; }
+  .non-active {
+    padding-inline-start: 11px; }
+  .non-active:last-of-type {
+    margin-inline-start: -11px;
+    padding-inline-start: 21px; }
+  .non-active picture img {
+    width: 100%;
+    height: auto; } }

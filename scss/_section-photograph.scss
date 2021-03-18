@@ -30,6 +30,15 @@
   max-width: 585px;
 } 
 
+.lists::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.lists {
+  padding-inline-start: 0;
+}
+
 .portofolio__main__photograph__slider_description:nth-of-type(2) {
   padding-block-end: 82px;
 }
@@ -66,6 +75,7 @@
 .portofolio__main__research_photo__header_heading {
   display: $none-decoration;
 }
+
 .portofolio__main__research_photo__morroco_features {
   @include reset-size-black-normal-text;
 }

@@ -42,3 +42,8 @@
   padding-inline-start: $body-padding-inline;  
 }
 
+@mixin reset-images-responsive {
+  width: 100%;
+  height: $auto-margin;
+}
+

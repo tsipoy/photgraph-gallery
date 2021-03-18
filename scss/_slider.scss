@@ -9,21 +9,28 @@
   padding-inline-end: 15px;
 }
 
-.portofolio__main__photograph__slider_images {
+.lists {
   display: flex;
   flex-direction: row;
   overflow-x: $auto-margin;
 }
 
 .portofolio__main__photograph__slider_images img {
-  width: 40%;
   border-radius: 5px;
   margin-inline-end: 10px;
-  opacity: 0.33;
 }
 
-.portofolio__main__photograph__slider_images img:nth-of-type(1) {
-  opacity: 1;
+.active picture img {
+  max-width: 137px;
+}
+
+.non-active picture img {
+  opacity: 0.33;
+  max-width: 137px;
+}
+
+.non-active picture img:hover {
+  opacity: inherit;
 }
 
 @media(min-width: $min-width) {
@@ -32,7 +39,35 @@
   }
 
   .portofolio__main__photograph__slider_images img {
-  width: 11.5%;
-  border-radius: 5px;
+    width: 11.5%;
+    margin-inline-end: 0;
+    border-radius: 5px;
   }
+  
+  #current_image .rock_carving_large {
+    @include reset-images-responsive;
+  }
+
+  .active {
+    margin-inline-end: -11px;
+    padding-inline-end: 10px;
+  } 
+
+  
+  .active picture img {
+    @include reset-images-responsive;
+  }
+  
+  .non-active {
+    padding-inline-start: 11px;
+  }
+
+  .non-active:last-of-type {
+    margin-inline-start: -11px;
+    padding-inline-start: 21px;
+  }
+    
+  .non-active picture img {
+    @include reset-images-responsive;
+  } 
 }
