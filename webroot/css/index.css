@@ -189,6 +189,9 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     font-size: 40px;
     line-height: 48px;
     margin-block-end: var(--default-margin); }
+  .portofolio__header_heading__menu_navigation {
+    position: absolute;
+    top: 0; }
   .portofolio__header_heading__menu_navigation__lists {
     display: flex;
     flex-direction: row; }

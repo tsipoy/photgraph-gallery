@@ -139,6 +139,11 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-block-end: var(--default-margin);
   }
 
+  .portofolio__header_heading__menu_navigation {
+    position: absolute;
+    top: 0;
+  }
+
   .portofolio__header_heading__menu_navigation__lists {
     display: $display-flex;
     flex-direction: $row-direction;
