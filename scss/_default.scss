@@ -27,6 +27,22 @@ li a {
   text-decoration: underline;
 }
 
+.container {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.portofolio__header_heading__link,
+.portofolio__footer__header_heading__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.portofolio__header_heading__link:hover,
+.portofolio__footer__header_heading__link:hover {
+  text-decoration: none;
+}
+
 @media(min-width: $min-width) {
   h2, h3 {
     @include reset-h2-h3-desktop;

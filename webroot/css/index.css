@@ -58,6 +58,19 @@ a:hover,
 li a {
   text-decoration: underline; }
 
+.container {
+  overflow-x: hidden;
+  position: relative; }
+
+.portofolio__header_heading__link,
+.portofolio__footer__header_heading__link {
+  text-decoration: none;
+  color: #ffffff; }
+
+.portofolio__header_heading__link:hover,
+.portofolio__footer__header_heading__link:hover {
+  text-decoration: none; }
+
 @media (min-width: 1200px) {
   h2, h3 {
     font-size: 52px;
@@ -112,21 +125,20 @@ li a {
   top: 40%; }
 
 .portofolio__header__label__a11y {
-  color: transparent;
+  visibility: hidden;
   padding: var(--gray-font-size); }
 
 .portofolio__header_heading__menu_navigation {
   padding: var(--text-gray-line-height);
   position: absolute;
   z-index: 3;
-  top: var(--default-margin);
+  top: 100%;
   right: var(--default-margin);
   bottom: var(--default-margin);
   width: 100%;
   height: 165px;
-  box-shadow: -2px 2px 9px 2px rgba(0, 0, 0, 0.5);
-  transform: translateY(-127%);
-  transition: transform 0.3s; }
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-135%); }
 
 .portofolio__header_heading__menu_navigation__lists {
   text-align: center; }
@@ -368,7 +380,7 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   .portofolio__main__updating {
     margin-inline-start: -13%;
     padding-inline-start: 13%;
-    margin-inline-end: -13%; }
+    margin-inline-end: -12.5%; }
   .portofolio__main__updating__form {
     display: flex;
     flex-direction: row; }
@@ -392,7 +404,7 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     padding-inline-start: 25px; } }
 
 .portofolio__footer {
-  background-color: 16px;
+  background-color: #ffffff;
   padding-block-start: 75px;
   padding-inline-start: 14px;
   padding-inline-end: 15px; }
@@ -506,7 +518,7 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-inline-start: -139px;
-    margin-inline-end: -139px; }
+    margin-inline-end: -135px; }
   .portofolio__footer__copyright_modifying {
     padding-inline-start: 115px;
     padding-inline-end: 115px; } }

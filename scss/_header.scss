@@ -58,7 +58,7 @@
 }
 
 .portofolio__header__label__a11y {
-  color: transparent;
+  visibility: hidden;
   padding: var(--gray-font-size);
 }
 
@@ -67,15 +67,16 @@
   padding: var(--text-gray-line-height);
   position: absolute;
   z-index: 3;
-  top: var(--default-margin);
+  // top: var(--default-margin);
+  top: 100%;
   right: var(--default-margin);
   bottom: var(--default-margin);
   width: 100%;
   height: 165px;
   // box-shadow: 0 0 50px rgba(204, 181, 181, 0.5);
-  box-shadow: -2px 2px 9px 2px rgba(0, 0, 0, 0.5);
-  transform: translateY(-127%);
-  transition: transform 0.3s;
+  box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-135%);
+  // transition: transform 0.3s;
 }
 
 .portofolio__header_heading__menu_navigation__lists {
