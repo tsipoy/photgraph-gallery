@@ -16,9 +16,12 @@
 .portofolio__footer__header_heading {
   font-size: $text-gray-line-height;
   line-height: $text-black-line-height;
-  color: #000000;
   text-transform: $text-transform;
   font-style: normal;
+}
+
+.portofolio__footer__header_heading__link {
+  color: #000000;
 }
 
 .portofolio__footer__header_description {

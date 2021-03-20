@@ -62,10 +62,13 @@ li a {
   overflow-x: hidden;
   position: relative; }
 
-.portofolio__header_heading__link,
-.portofolio__footer__header_heading__link {
+.portofolio__header_heading__link {
   text-decoration: none;
   color: #ffffff; }
+
+.portofolio__footer__header_heading__link {
+  text-decoration: none;
+  color: #000000; }
 
 .portofolio__header_heading__link:hover,
 .portofolio__footer__header_heading__link:hover {
@@ -416,9 +419,11 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__footer__header_heading {
   font-size: 24px;
   line-height: 32px;
-  color: #000000;
   text-transform: uppercase;
   font-style: normal; }
+
+.portofolio__footer__header_heading__link {
+  color: #000000; }
 
 .portofolio__footer__header_description {
   font-size: 16px;

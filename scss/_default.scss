@@ -32,10 +32,14 @@ li a {
   position: relative;
 }
 
-.portofolio__header_heading__link,
-.portofolio__footer__header_heading__link {
+.portofolio__header_heading__link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.portofolio__footer__header_heading__link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .portofolio__header_heading__link:hover,
