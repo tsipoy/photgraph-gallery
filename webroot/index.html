@@ -62,7 +62,7 @@
                       <picture>
                         <!-- small -->
                         <source type="image/webp" srcset="./images/rock_carvings_lg.webp">
-                        <img src="./images/rock_carvings_lg.jpg" alt="">
+                        <img src="./images/rock_carvings_lg.jpg" class="large_image"  alt="rock_carvings large">
                       </picture>
                     </a>
                   </li>
@@ -71,7 +71,7 @@
                       data-image-sm="./images/stairs_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/stairs_lg.webp">
-                        <img src="./images/stairs_lg.jpg" alt="stairs large">
+                        <img src="./images/stairs_lg.jpg" class="large_image" alt="stairs large">
                       </picture>
                     </a>
                   </li>
@@ -80,7 +80,7 @@
                       data-image-sm="./images/ripples_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/ripples_lg.webp">
-                        <img src="./images/ripples_lg.jpg" alt="">
+                        <img src="./images/ripples_lg.jpg" class="large_image" alt="ripples large">
                       </picture>
                     </a>
                   </li>
@@ -89,7 +89,7 @@
                       data-image-sm="./images/dunes_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/dunes_lg.webp">
-                        <img src="./images/dunes_lg.jpg" alt="dunes large">
+                        <img src="./images/dunes_lg.jpg" class="large_image" alt="dunes large">
                       </picture>
                     </a>
                   </li>
@@ -98,7 +98,7 @@
                       data-image-sm="./images/arches_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/arches_lg.webp">
-                        <img src="./images/arches_lg.jpg" alt="arches large">
+                        <img src="./images/arches_lg.jpg" class="large_image" alt="arches large">
                       </picture>
                     </a>
                   </li>
@@ -107,7 +107,7 @@
                       data-image-sm="./images/car_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/car_lg.webp">
-                        <img src="./images/car_lg.jpg" alt="car large">
+                        <img src="./images/car_lg.jpg" class="large_image" alt="car large">
                       </picture>
                     </a>
                   </li>
@@ -116,7 +116,7 @@
                       data-image-sm="./images/sunset_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/sunset_lg.webp">
-                        <img src="./images/sunset_lg.jpg" alt="sunset large">
+                        <img src="./images/sunset_lg.jpg" class="large_image" alt="sunset large">
                       </picture>
                     </a>
                   </li>
@@ -125,7 +125,7 @@
                       data-image-sm="./images/canyon_sm.jpg">
                       <picture>
                         <source type="image/webp" srcset="./images/canyon_lg.webp">
-                        <img src="./images/canyon_lg.jpg" alt="canyon large">
+                        <img src="./images/canyon_lg.jpg" class="large_image" alt="canyon large">
                       </picture>
                     </a>
                   </li>
@@ -318,7 +318,6 @@
 
     const handleClick = (e) => {
       const newAnchore = e.target.closest(".images_links");
-      e.target.style.opacity = "1";
       console.log(newAnchore)
       if (newAnchore) {
         e.preventDefault();
