@@ -568,7 +568,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .lists {
   display: flex;
   flex-direction: row;
-  overflow-x: auto; }
+  overflow-x: auto;
+  margin-block-start: 8px; }
 
 .portofolio__main__photograph__slider_images img {
   border-radius: 5px;
