@@ -573,6 +573,10 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   overflow-x: auto;
   margin-block-start: 8px; }
 
+.lists {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+
 .portofolio__main__photograph__slider_images img {
   border-radius: 5px;
   margin-inline-end: 10px; }
@@ -580,12 +584,18 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .active picture img {
   max-width: 137px; }
 
+.active picture img:hover {
+  opacity: inherit; }
+
 .non-active picture img {
   opacity: 0.33;
   max-width: 137px; }
 
 .non-active picture img:hover {
   opacity: inherit; }
+
+.images_links--clear {
+  opacity: 1; }
 
 @media (min-width: 1200px) {
   .portofolio__main__photograph__slider_images {

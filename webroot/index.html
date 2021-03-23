@@ -57,8 +57,8 @@
               <nav aria-label="Thumbnails">
                 <ul class="lists">
                   <li class="active">
-                    <a href="./images/rock_carvings_lg.jpg" class="images_links"
-                      data-image-md="./images/rock_carvings_md.jpg" data-image-lg="./images/rock_carvings_lg.jpg">
+                    <a href="./images/rock_carvings_sm.jpg" class="images_links"
+                      data-image-md="./images/rock_carvings_md.jpg" data-image-sm="./images/rock_carvings_sm.jpg">
                       <picture>
                         <!-- small -->
                         <source type="image/webp" srcset="./images/rock_carvings_lg.webp">
@@ -318,6 +318,8 @@
 
     const handleClick = (e) => {
       const newAnchore = e.target.closest(".images_links");
+      e.target.style.opacity = "1";
+      console.log(newAnchore)
       if (newAnchore) {
         e.preventDefault();
         bigImage.querySelector("img").src = newAnchore.href
