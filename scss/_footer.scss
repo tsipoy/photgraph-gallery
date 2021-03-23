@@ -62,14 +62,14 @@
 
 // map
 
-.portofolio__footer__map__profile__lists__experience {
+.portofolio__footer__map__profile__lists__experience__link {
   @include reset-size-gray-normal-text;
+  text-decoration: none;
 }
 
 .portofolio__footer__map__profile__wrapper {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
   align-items: center;
 }
 
@@ -77,10 +77,13 @@
   max-width: 100px;
   border-radius: 5px;
 }
-.portofolio__footer__map__profile__lists__date {
+
+
+.portofolio__footer__map__profile__lists__experience__link__date {
   @include reset-size-black-normal-text;
   font-size: 12px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .portofolio__footer__copyright_modifying {

@@ -465,11 +465,12 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__footer__homepage__navigation_list {
   padding-block-end: 8px; }
 
-.portofolio__footer__map__profile__lists__experience {
+.portofolio__footer__map__profile__lists__experience__link {
   font-size: 16px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
-  mix-blend-mode: normal; }
+  mix-blend-mode: normal;
+  text-decoration: none; }
 
 .portofolio__footer__map__profile__wrapper {
   display: flex;
@@ -480,12 +481,13 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   max-width: 100px;
   border-radius: 5px; }
 
-.portofolio__footer__map__profile__lists__date {
+.portofolio__footer__map__profile__lists__experience__link__date {
   font-size: 18px;
   line-height: 32px;
   color: #000000;
   font-size: 12px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
 
 .portofolio__footer__copyright_modifying {
   font-size: 16px;
