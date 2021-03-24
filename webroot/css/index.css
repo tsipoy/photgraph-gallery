@@ -581,11 +581,15 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   border-radius: 5px;
   margin-inline-end: 10px; }
 
+.active picture img {
+  max-width: 137px; }
+
 .active picture img:hover {
   opacity: inherit; }
 
 .non-active picture img {
-  opacity: 0.33; }
+  opacity: 0.33;
+  max-width: 137px; }
 
 .non-active picture img:hover {
   opacity: inherit; }
