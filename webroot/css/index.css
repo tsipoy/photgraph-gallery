@@ -571,7 +571,7 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  margin-block-start: 8px; }
+  margin-block-start: 3px; }
 
 .lists {
   -ms-overflow-style: none;
@@ -608,6 +608,9 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-inline-end: 0;
     border-radius: 5px; }
   #current_image .rock_carving_large {
+    width: 100%;
+    height: auto; }
+  #current_image .rock_carving_small {
     width: 100%;
     height: auto; }
   .active {

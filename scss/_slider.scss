@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   overflow-x: $auto-margin;
-  margin-block-start: 8px;
+  margin-block-start: 3px;
 }
 
 .lists {
@@ -67,11 +67,15 @@
     @include reset-images-responsive;
   }
 
+  #current_image .rock_carving_small {
+    width: 100%;
+    height: auto;
+  }
+
   .active {
     margin-inline-end: -11px;
     padding-inline-end: 10px;
   } 
-
   
   .active picture img {
     @include reset-images-responsive;
