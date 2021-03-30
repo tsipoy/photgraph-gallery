@@ -29,7 +29,6 @@
 
 .active picture img {
   max-width: 137px;
-  // opacity: 0.33;
 }
 
 .active picture img:hover {
@@ -47,6 +46,10 @@
 
 .images_links:focus .large_image {
   opacity: 1;
+}
+
+.images_links:focus .large_image .active picture img {
+  opacity: 0.33;
 }
 
 @media(min-width: $min-width) {
