@@ -52,7 +52,7 @@
           <div class="portofolio__main__photograph__slider_images">
             <article>
               <picture id="current_image">
-                <img src="./images/rock_carvings_lg.jpg" alt width="100%" height="auto" class="rock_carving_large">
+                <img src="./images/rock_carvings_lg.jpg" alt width="100%" height="auto" class="rock_carving_small">
               </picture>
               <nav aria-label="Thumbnails">
                 <ul class="lists">
@@ -61,8 +61,8 @@
                       data-image-md="./images/rock_carvings_md.jpg" data-image-sm="./images/rock_carvings_sm.jpg">
                       <picture>
                         <!-- small -->
-                        <source type="image/webp" srcset="./images/rock_carvings_lg.webp">
-                        <img src="./images/rock_carvings_lg.jpg" class="large_image"  alt="rock_carvings large">
+                        <source type="image/webp" srcset="./images/rock_carvings_sm.webp">
+                        <img src="./images/rock_carvings_sm.jpg" class="large_image"  alt="rock_carvings small">
                       </picture>
                     </a>
                   </li>
@@ -79,8 +79,8 @@
                     <a href="./images/ripples_sm.jpg" class="images_links" data-image-md="./images/ripples_md.jpg"
                       data-image-sm="./images/ripples_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/ripples_lg.webp">
-                        <img src="./images/ripples_lg.jpg" class="large_image" alt="ripples large">
+                        <source type="image/webp" srcset="./images/ripples_sm.webp">
+                        <img src="./images/ripples_sm.jpg" class="large_image" alt="ripples small">
                       </picture>
                     </a>
                   </li>
@@ -88,8 +88,8 @@
                     <a href="./images/dunes_sm.jpg" class="images_links" data-image-md="./images/dunes_md.jpg"
                       data-image-sm="./images/dunes_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/dunes_lg.webp">
-                        <img src="./images/dunes_lg.jpg" class="large_image" alt="dunes large">
+                        <source type="image/webp" srcset="./images/dunes_sm.webp">
+                        <img src="./images/dunes_sm.jpg" class="large_image" alt="dunes small">
                       </picture>
                     </a>
                   </li>
@@ -97,8 +97,8 @@
                     <a href="./images/arches_sm.jpg" class="images_links" data-image-md="./images/arches_md.jpg"
                       data-image-sm="./images/arches_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/arches_lg.webp">
-                        <img src="./images/arches_lg.jpg" class="large_image" alt="arches large">
+                        <source type="image/webp" srcset="./images/arches_sm.webp">
+                        <img src="./images/arches_sm.jpg" class="large_image" alt="arches small">
                       </picture>
                     </a>
                   </li>
@@ -106,8 +106,8 @@
                     <a href="./images/car_lg.jpg" class="images_links" data-image-md="./images/car_md.jpg"
                       data-image-sm="./images/car_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/car_lg.webp">
-                        <img src="./images/car_lg.jpg" class="large_image" alt="car large">
+                        <source type="image/webp" srcset="./images/car_sm.webp">
+                        <img src="./images/car_sm.jpg" class="large_image" alt="car small">
                       </picture>
                     </a>
                   </li>
@@ -115,8 +115,8 @@
                     <a href="./images/sunset_sm.jpg" class="images_links" data-image-md="./images/sunset_md.jpg"
                       data-image-sm="./images/sunset_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/sunset_lg.webp">
-                        <img src="./images/sunset_lg.jpg" class="large_image" alt="sunset large">
+                        <source type="image/webp" srcset="./images/sunset_sm.webp">
+                        <img src="./images/sunset_sm.jpg" class="large_image" alt="sunset small">
                       </picture>
                     </a>
                   </li>
@@ -124,8 +124,8 @@
                     <a href="./images/canyon_sm.jpg" class="images_links" data-image-md="./images/canyon_md.jpg"
                       data-image-sm="./images/canyon_sm.jpg">
                       <picture>
-                        <source type="image/webp" srcset="./images/canyon_lg.webp">
-                        <img src="./images/canyon_lg.jpg" class="large_image" alt="canyon large">
+                        <source type="image/webp" srcset="./images/canyon_sm.webp">
+                        <img src="./images/canyon_sm.jpg" class="large_image" alt="canyon small">
                       </picture>
                     </a>
                   </li>
@@ -318,7 +318,6 @@
 
     const handleClick = (e) => {
       const newAnchore = e.target.closest(".images_links");
-      console.log(newAnchore);
       if (newAnchore) {
         e.preventDefault();
         bigImage.querySelector("img").src = newAnchore.href
