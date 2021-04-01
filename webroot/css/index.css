@@ -478,7 +478,8 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
   align-items: center; }
 
 .portofolio__footer__map__profile__profile_photo {
-  max-width: 100px;
+  width: 71px;
+  height: 47px;
   border-radius: 5px; }
 
 .portofolio__footer__map__profile__lists__experience__link__date {
