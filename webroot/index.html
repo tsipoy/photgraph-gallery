@@ -318,6 +318,7 @@
 
     const handleClick = (e) => {
       const newAnchore = e.target.closest(".images_links");
+      console.log(newAnchore)
       if (newAnchore) {
         e.preventDefault();
         bigImage.querySelector("img").src = newAnchore.href
