@@ -584,9 +584,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 .portofolio__main__photograph__slider_images_article nav {
   margin-inline-end: -16px; }
 
-.active picture img:hover {
-  opacity: inherit; }
-
 .non-active picture img {
   opacity: 0.33;
   max-width: 137px; }
@@ -596,9 +593,6 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
 
 .images_links:focus .large_image {
   opacity: 1; }
-
-.images_links:focus .active picture img {
-  opacity: 0.33; }
 
 @media (min-width: 1200px) {
   .portofolio__main__photograph__slider_images {
