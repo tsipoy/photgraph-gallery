@@ -62,6 +62,10 @@
 
 // map
 
+.portofolio__footer__map__profile__lists {
+  padding-inline-start: 53px;
+}
+
 .portofolio__footer__map__profile__lists__experience__link {
   @include reset-size-gray-normal-text;
   text-decoration: none;
@@ -138,7 +142,7 @@
 
   .portofolio__footer__copyright_modifying {
     padding-inline-start: 115px;
-    padding-inline-end: 115px;
+    padding-inline-end: 137px;
   }
 
 }

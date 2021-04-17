@@ -3,10 +3,10 @@
 .portofolio__main__updating {
   background-color:  #FFDD78;
   margin-inline-start: -($padding-inline-start);
-  padding-inline-start: 15px;
-  padding-block-start: 63px;
   padding-block-end: 54px;
+  padding-block-start: 63px;
   padding-inline-end: 15px;
+  padding-inline-start: 15px;
 }
 
 
@@ -33,12 +33,11 @@
 }
 
 .portofolio__main__updating__form__input{
-  background-color: $text-gray-font-size;
+  background-color: #ffffff;
   border: 1px solid #DADADA;
   box-sizing: border-box;
   border-radius: 5px;
   padding-inline-start: $text-gray-font-size;
-  padding-block-end: 11px;
   padding-block-start: 13px;
   margin-block-start: 12px;
   margin-block-end: $text-gray-font-size;
@@ -79,24 +78,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-inline-start: 218px;
-    padding-block-start: $desktop-font-size;
+    padding-inline-start: 200px;
+    // padding-block-start: $desktop-font-size;
   }
 
   .portofolio__main__updating__form__label {
-    margin-inline-start: -54px;
+    margin-inline-start: -67px;
   }
   
   .portofolio__main__updating__form__input {
-    padding-block-end: 19px;
-    padding-inline-end: 142px;
-    margin-inline-end: 54px;
+    padding-block-end: 16px;
+    padding-inline-end: 159px;
+    margin-inline-end: 48px;
   }
 
-  .portofolio__main__updating__form__submit{
-    margin-block-start: 30px;
-    margin-block-end: 104px;
-    padding-inline-end: 25px;
-    padding-inline-start: 25px;
-  }
+  // .portofolio__main__updating__form__submit{
+  //   margin-block-start: 30px;
+  //   margin-block-end: 104px;
+  //   padding-inline-end: 25px;
+  //   padding-inline-start: 25px;
+  // }
 }
