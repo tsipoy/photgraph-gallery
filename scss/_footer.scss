@@ -1,5 +1,4 @@
-
-@import"variables";
+@import "variables";
 
 // footer {
 //   display: none;
@@ -28,7 +27,6 @@
   @include reset-size-gray-normal-text;
   padding-block-start: 22px;
   padding-block-end: 22px;
-
 }
 
 .portofolio__footer__social_media {
@@ -57,13 +55,13 @@
 
 .portofolio__footer__homepage__navigation_list {
   padding-block-end: 8px;
-
 }
 
 // map
 
 .portofolio__footer__map__profile__lists {
-  padding-inline-start: 53px;
+  padding-inline-start: 27px;
+  margin-block-start: 28px;
 }
 
 .portofolio__footer__map__profile__lists__experience__link {
@@ -82,7 +80,6 @@
   height: 47px;
   border-radius: 5px;
 }
-
 
 .portofolio__footer__map__profile__lists__experience__link__date {
   @include reset-size-black-normal-text;
@@ -106,9 +103,9 @@
   padding-inline-start: $padding-inline-start;
 }
 
-@media(min-width: $min-width) {
+@media (min-width: $min-width) {
   .portofolio__footer {
-    @include  reset-max-width;
+    @include reset-max-width;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -124,7 +121,7 @@
 
   .portofolio__footer__social_media {
     padding-block-start: 10px;
-}
+  }
 
   .portofolio__footer__map {
     padding-block-start: 8px;
@@ -144,5 +141,4 @@
     padding-inline-start: 115px;
     padding-inline-end: 137px;
   }
-
 }

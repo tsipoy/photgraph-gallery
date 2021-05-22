@@ -1,6 +1,5 @@
 # "Photography" mockup-to-website project
 
-
 ## Dependencies
 
 - Node.js
@@ -17,10 +16,11 @@ You can find the design:
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
 ### Screenshot
+
 ![screenshot](https://iili.io/KIqFne.png)
 
-
 ### Build with
+
 - html - [BEM methodology](https://en.bem.info/methodology/quick-start/)
 - css
 - sass
@@ -32,6 +32,5 @@ You'll want to run the `scss:watch` task when you're developing this project.
 
 ## Contact
 
--   Website [demo](https://photography-page-natacha.netlify.app/)
--   GitHub [tsipoy](https://github.com/tsipoy/front-end-finals/tree/sliders/)
-
+- Website [demo](https://front-end-finals-orcin.vercel.app/)
+- GitHub [tsipoy](https://github.com/tsipoy/front-end-finals/tree/sliders/)
