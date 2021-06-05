@@ -32,5 +32,5 @@ You'll want to run the `scss:watch` task when you're developing this project.
 
 ## Contact
 
-- Website [demo](https://front-end-finals-orcin.vercel.app/)
+- Website [demo](https://photograf-page-natacha.netlify.app/)
 - GitHub [tsipoy](https://github.com/tsipoy/front-end-finals/tree/sliders/)
