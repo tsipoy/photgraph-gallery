@@ -5,16 +5,17 @@ body {
 }
 
 html {
-  font-family: 'Dm Sans', sans-serif;
+  font-family: "Dm Sans", sans-serif;
 }
 
-h1, 
+h1,
 h2,
 h3 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   @include reset-h2-h3;
 }
 
@@ -47,8 +48,9 @@ li a {
   text-decoration: none;
 }
 
-@media(min-width: $min-width) {
-  h2, h3 {
+@media (min-width: $min-width) {
+  h2,
+  h3 {
     @include reset-h2-h3-desktop;
   }
 }

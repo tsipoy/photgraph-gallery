@@ -39,14 +39,15 @@ body {
   margin: 0; }
 
 html {
-  font-family: 'Dm Sans', sans-serif; }
+  font-family: "Dm Sans", sans-serif; }
 
 h1,
 h2,
 h3 {
-  font-family: 'DM Serif Display', serif; }
+  font-family: "DM Serif Display", serif; }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 40px;
   line-height: 48px;
   color: #000000; }
@@ -75,7 +76,8 @@ li a {
   text-decoration: none; }
 
 @media (min-width: 1200px) {
-  h2, h3 {
+  h2,
+  h3 {
     font-size: 52px;
     line-height: 64px; } }
 
@@ -609,14 +611,16 @@ body > [type="checkbox"]:checked ~ .portofolio__main {
     margin-inline-end: 0; }
   .portofolio__main__photograph__slider_images img {
     width: 11.5%;
-    margin-inline-end: 0;
+    margin-inline-end: 4px;
     border-radius: 5px; }
+  .lists {
+    overflow-x: unset; }
   #current_image .rock_carving_large {
     width: 100%;
     height: auto; }
   #current_image .rock_carving_current_image {
-    width: 100%;
-    height: auto; }
+    max-width: 100%;
+    width: 1200px; }
   .active {
     margin-inline-end: -11px;
     padding-inline-end: 10px; }
