@@ -20,10 +20,10 @@ You can find the design:
 
 ### Build with
 
-- html - [BEM methodology](https://en.bem.info/methodology/quick-start/)
-- css
-- sass
-- javascript
+- HTML
+- CSS
+- SASS
+- JavaScript
 
 ## Development
 
